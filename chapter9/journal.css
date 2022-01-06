@@ -1,3 +1,21 @@
 body {
     font-family: Verdana, Geneva, arial, sans-serif;
+    font-size: small;
+    background-color: #f3faf2;
+}
+h1,h2 {
+    color: #cc6600;
+   /* (text-decoration: underline overline;) if we really want to add underline and overline together then you need to combine two values into one rule(dont put , in between them)*/
+     border-bottom: thin dotted #888888;
+}
+h1 {
+    font-size: 150%;
+    font-weight: normal;
+}
+h2 {
+    font-size: 130%;
+    font-weight: normal;
+}
+blockquote {
+    font-style: italic;
 }
