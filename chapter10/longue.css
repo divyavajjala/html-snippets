@@ -5,6 +5,9 @@ body {
     padding: 20px 20px 20px 20px;
     border-left: 2px solid #000000;
     border-right: 2px dotted #007e7e;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
 }
 h1,h2 {
     color: #007e7e;
@@ -14,3 +17,60 @@ h1 {
 }
 h2 {
     font-size: 130%;
+}
+#guarantee { /*'#' represents id and'.' represents class p.gurantee means this css rule applies only that particular p and .gurantee is applies all the gurantee class in html ex:p class="gurantee" and h2 calss="gurantee". */
+    border: 1px dotted #fff;
+    background-color: #a7cece;
+    padding: 25px;
+    margin: 30px;
+    line-height: 1.9em;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#444;
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 50px;
+    margin-right: 250px;
+}
+#elixirs {
+    border-width: thin;
+    border-style: solid;
+    border-color: #007e7e;
+    width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+    background-image: url(images/cocktail.gif);
+    background-repeat: repeat-x;    
+    line-height: 1;
+}
+#elixirs h2 {
+    color: #000000;
+}
+#elixirs h3 {
+    color: #d12c47;
+}
+#footer {
+    font-size: 50%;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+.cd {
+    font-style: italic;
+}
+.artist {
+    font-weight: bold;
+}
+a:link {
+    color: #008000;
+}
+a:visited {
+    color: #ff0000;
+}
+a:hover {
+    color: #ffff00;
+}
