@@ -1,0 +1,5 @@
+blocklevel elements: p,h1-h6,blockquote,ol,ul,dl and div
+inline elements:a,em and img,span
+
+<div>: is used for divide the sections of document.
+<span>: is used for divide small portions of text and images.
