@@ -3,3 +3,5 @@ inline elements:a,em and img,span
 
 <div>: is used for divide the sections of document.
 <span>: is used for divide small portions of text and images.
+
+psuedo classes: 
