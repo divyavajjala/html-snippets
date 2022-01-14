@@ -45,7 +45,7 @@ h2 {
     text-align: center;
     background-image: url(images/cocktail.gif);
     background-repeat: repeat-x;    
-    line-height: 1;
+    float: right;
 }
 #elixirs h2 {
     color: #000000;
@@ -65,12 +65,19 @@ h2 {
 .artist {
     font-weight: bold;
 }
-a:link {
-    color: #008000;
+#elixirs a:link {
+    color: #007e7e;
+}
+#elixirs a:visited {
+    color: #333333;
+}
+#elixirs a:hover {
+    background: #f88396;
+    color:#0d5353;
+}
+/*a:link {
+    color: #007e7e;
 }
 a:visited {
     color: #ff0000;
-}
-a:hover {
-    color: #ffff00;
-}
+} tested for directions */
