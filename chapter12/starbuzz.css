@@ -17,17 +17,25 @@ h1 {
     background: #efe5d0 url(images/background.gif) top left;
     padding: 15px;
     font-size: 105%;
+    /*margin: 0px 330px 10px 10px;  here we given right margin width 330px to reduce the width of the content area of main div and we given the values from the total of sidebar width280+padding30+margin20*/
     margin: 0px 10px 10px 10px;
+    width: 420px;/*main content element width 420px*/
+    float: left;/*now we are going to float main div element*/
+    /*when we float main content to the left side the design feels to loose, allowing the sidebar to expand */
 }
 #sidebar {
-    background-color: #efe5d0 url(images/background.gif) bottom right;
+    background: #efe5d0 url(images/background.gif) bottom right;
     padding: 15px;
     margin: 0px 10px 10px 10px;
     font-size: 105%;
+    margin: 0px 10px 10px 470px; /*here we given margin width 470px (main div 420w+30p+20m)*/
+    /*width: 280px; width property tells that the content area of element
+    float: right; when we float sidebar to the right the design stays nice and tight*/
+    
 }
 .beanheading {
     text-align: center;
-    line-height: 1.8px;
+    line-height: 1.8em;
 }
 .slogan {
     color: #954b4b;
@@ -35,12 +43,27 @@ h1 {
 #footer {
     background-color: #675c47;
     margin: 10px;
-    height: 50px;
+    padding: 15px;
     text-align: center;
     color: #efe5d0;
+    font-size: 90%;
+    /*clear: right;/* this property says that no floating content allowed right side */
+    clear: left;
 }
 a:link {
     color: #b76666;
-    text-decoration: none; /*none pro*/
-    border-bottom: thin dotted;
+    text-decoration: none; /*text-decoration sets the appearence of decorative lines of text here and "none" saying that no underline */
+    border-bottom: thin dotted #b76666; /* and above rule we mentioned none and here we are giving thin dotted underline*/
+}
+a:visited {
+    color: #675c47;
+    text-decoration: none;
+    border-bottom: thin dotted #675c47;
+}
+#allcontent {
+    width: 800px; /*this width fixed the whole body so that everything fit in to 800px(header,main content,sidebar,footer)and it doesn't move when the browser is resized.*/
+    padding: 5px 0px 0px 5px;
+    background-color: #675c47;
+    margin-left: auto;/*The frozen layout has some benefits, but it also just plain looks bad when you widen the browser so we've to fix this to jello layouts.this will lockdown the width of the allcontent area in the page, so if we given "auto"for the margin left&right the browser figures out right and left margin then the content is centered*/
+    margin-right: auto;
 }

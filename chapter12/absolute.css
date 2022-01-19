@@ -1,0 +1,63 @@
+body {
+    background-color: #b5a789;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    margin: 0px;
+}
+#header {
+    background-color: #675c47;
+    margin: 10px;
+    height: 108px;
+}
+#main {
+    background: #efe5d0 url(images/background.gif) top left;
+    padding: 15px;
+    font-size: 105%;
+    margin: 0px 330px 10px 10px;
+}
+#sidebar {
+    background: #efe5d0 url(images/background.gif) bottom right;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    font-size: 105%;
+    position: absolute;/*without adding any float property directly we can change it here using of absolute(CSS that allows you to exact position elements on the page. It’s called absolute positioning)*/
+    top: 128px; /*sidebar positioned 128px from the top of the page(header height 108px+header topmargin 10px+ header bottom margin 10px)*/
+    right: 0px;/*sidebar positioned 0px from the right*/
+    width: 280px; /**/
+}
+#footer {
+    background-color: #675c47;
+    margin: 0px 10px 10px 10px;
+    padding: 15px;
+    text-align: center;
+    color: #efe5d0;
+    font-size: 90%;
+    clear: right;
+}
+h1 {
+    color: #954b4b;
+    font-size: 120%;
+}
+.beanheading {
+    text-align: center;
+    line-height: 1.8em;
+}
+.slogan {
+    color: #954b4b;
+}
+a:link {
+    color: #b76666;
+    text-decoration: none; /*text-decoration sets the appearence of decorative lines of text here and "none" saying that no underline */
+    border-bottom: thin dotted #b76666; /* and above rule we mentioned none and here we are giving thin dotted underline*/
+}
+a:visited {
+    color: #675c47;
+    text-decoration: none;
+    border-bottom: thin dotted #675c47;
+}
+#award {
+    position: absolute;
+    left: 365px;
+    top: 30px;
+    z-index: 99; /*absolutely positioned elements is that you can layer them on top of each other. But if you’ve got a few absolutely positioned elements at the same position in a page, this z-index decides who's top on the page*/
+}
