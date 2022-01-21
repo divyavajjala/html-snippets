@@ -61,3 +61,21 @@ a:visited {
     top: 30px;
     z-index: 99; /*absolutely positioned elements is that you can layer them on top of each other. But if you’ve got a few absolutely positioned elements at the same position in a page, this z-index decides who's top on the page*/
 }
+#coupon {
+    position: fixed; /* once you apply this property to a element that element doesn't move if you scroll or resize the window it is fix in the page*/
+    top: 300px;
+    left: -90px;
+}
+#coupon img {
+    border: none;
+}
+#coupon a:link {
+    border: none;
+}
+#coupon a:visited {
+    border: none;
+}
+.beanheading img {
+    position: relative;
+    left: 120px;
+}
