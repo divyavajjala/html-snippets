@@ -1,0 +1,61 @@
+body {
+    font-size: small;
+    background-color: #b5a789;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#header {
+background-color: #675c47;
+margin: 10px;
+}
+#main {
+background: #efe5d0 url(images/background.gif);
+margin: 0px 330px 10px 150px;
+padding: 15px;
+
+}
+#sidebar {
+    background: #efe5d0 url(images/background.gif);
+    float: right;
+    width: 280px;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;  
+    font-size: 105%;
+
+}
+#leftsidebar {
+    background: #efe5d0 url(images/background.gif);
+    float: left;
+    width:100px;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    font-size: 105%;
+}
+h1 {
+font-size: 120%;
+color: #954b4b;
+}
+#footer {
+    background-color: #675c47;
+    color: #efe5d0;
+    text-align: center;
+    clear: left;
+    padding: 15px;
+    font-size: 90%;
+}
+.beanheading {
+    text-align: center;
+    line-height: 1.8em;
+}
+.slogan {
+    color: #954b4b;
+}
+a:link {
+    color: #954b4b;
+    text-decoration: none;
+    border-bottom: #954b4b thin dotted;
+}
+a:visited {
+    border-bottom: #675c47 thin dotted;
+    color: #675c47;
+    text-decoration: none;
+}
