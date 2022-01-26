@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The StarbuzzBean Machine</title>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+        <h1>The Starbuzz Bean MAchine</h1>
+        <h2>Fill out the form below and click submit to order</h2>
+        <form action="http//www.starbuzzcoffee.com/processorder.php" method="get">
+            <table>
+                <tr>
+                    <th>Choose your beans</th>
+                    <td>
+                        <select name="beans">
+                            <option value="HouseBlend">House Blend</option>
+                            <option value="Bolivia">Shade Grown Bolivia</option>
+                            <option value="Gautemela">Organic Gautemela</option>
+                            <option value="Kenya">Kenya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>type</th>
+                    <td>
+                        <input type="radio" name="bean" value="whole">Whole Bean</br>
+                        <input type="radio" name="bean" checked="checked" value="Ground">Ground Bean</br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Extras</th>
+                    <td>
+                        <input type="checkbox" name="extras" value="gift wrap">Gift Wrap</br>
+                        <input type="checkbox" name="extras" value="include catalog with order">Include Catalog with Order
+                    </td>
+                </tr>
+                    <tr><th>ship to</th>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td><input type="text" name="fullname"/></td>
+                            </tr>
+                            <tr>
+                                <td>Address:</td>
+                                <td><input type="text" name="address"/></td>
+                            </tr>
+                            <tr>
+                                <td>City:</td>
+                                <td><input type="text" name="city"/></td>
+                            </tr>
+                            <tr>
+                                <td>State:</td>
+                                <td><input type="text" name="state"/></td>
+                            </tr>
+                            <tr>
+                                <td>Zip:</td>
+                                <td><input type="text" name="zip"/></td>
+                            </tr>
+                        </table>
+                    </td>
+                    </tr>
+                <tr>
+                    <th>Comments</th>
+                    <td><textarea name="comments" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <th>click on button</th>
+                    <td><input type="submit" value="order now"/></td>
+                </tr>
+            </table>
+            <fieldset>
+            <legend>condiments</legend>
+            <input type="checkbox" name="spice" value="salt">Salt</br>
+            <input type="checkbox" name="spice" value="pepper">Pepper
+            </fieldset>
+            password:<input type="password" name="secret"/>
+            <input type="file" name="doc"/>
+        </form>
+    </body>
+</html>
