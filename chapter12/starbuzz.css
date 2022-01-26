@@ -52,7 +52,7 @@ h1 {
 }
 a:link {
     color: #b76666;
-    text-decoration: none; /*text-decoration sets the appearence of decorative lines of text here and "none" saying that no underline */
+    text-decoration: none; /*text-decoration sets the appearence of decorative lines(underline,overline,line through) of text here and "none" saying that no underline */
     border-bottom: thin dotted #b76666; /* and above rule we mentioned none and here we are giving thin dotted underline*/
 }
 a:visited {

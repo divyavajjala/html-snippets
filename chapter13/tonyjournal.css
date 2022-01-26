@@ -1,0 +1,56 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;  
+}
+h1,h2 {
+    color: #ffa500;
+    border-bottom: thin dotted #808080;
+    font-weight: normal;
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 130%;
+}
+table{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: thin solid black;
+    caption-side: bottom;
+    /*border-spacing: 0px; /*this property defines the space in between the cells and 0px means it removes the space if you want to check once remove this property and check the output*/
+    border-collapse: collapse; /*this allows only single border in between cells*/
+}
+td,th {
+    border: thin dotted #000000;
+    padding: 5px;
+}
+th {
+    background-color: #ffa500;
+}
+caption {
+    padding: 10px;
+    font-style: italic;
+}
+/*td:nth-child(2), td:nth-child(4), td:nth-child(6){ 
+    text-align: center;
+}*/
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.cellcolor {
+    background-color: #fcba7a;
+}
+table table th {   /*used descendant selector the th is inside the child table and the child table is inside the parent table*/
+    background-color: #ffffff;
+}       
+li {
+    list-style-type: circle; /*list style type allows types of markers like(circle,square,disc,none)*/
+   /* list-style-image: url("backpack.gif"); this property allows you to own custom marker*/
+    padding-top: 5px;
+    margin-left: 20px;
+    list-style-position:inside;
+}
