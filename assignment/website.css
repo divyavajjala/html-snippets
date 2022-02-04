@@ -3,52 +3,58 @@ body{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-size: small; */
 }
+
 #header {
     /* background-color: blue; */
-
     height: 62px;
     margin: 0px 10px 47px 10px;
     /* font-size: 110%; */
 }
+
 #header img, #header #navs, #header #video, #header #searchbar{
     float: left;
 }
+
 #header select {
     margin-left: 56px;
-    width: 90px;
-   
+    width: 90px; 
+    border: none; 
 }
+
 #navs {
     padding: 16px 0px 16px 0px;
 }
+
 #searchbar {
     padding: 16px 0 16px 0;
     margin: 0px 120px 0px 49px;
+}
+
+/* input[type='search'] {  */ 
+#searchbar input {
+    padding: 0px 0px 0px 20px;
+    border: 1px solid #808080;
+    border-radius: 8px;
 } 
+
 #searchbar i {
     position:absolute;
     left: 1090px;
-    /* color: gray; */
+    color: gray;
+    margin-top: 3px;
 }
+
 #header #video {
     padding: 2px 0 16px 0;
-    margin-left: 238px;
+    margin: 13px 0px 0px 238px;
 }
-#main {
-    /* background-color: red; */
-    /* height: 800px; */
 
+#main {
     /* display: inline-block; */
     width: 1470px;
     margin: 0 10px 0 10px;
 }
-#human {
-    display: inline-block;
-    width: 10px;
-    height: 30px;
-    background-image: url('./images/2.png');
-    background-position: 0 0;
-}
+
 #sidebar {
     /* background-color: yellow;    */
     height: 400px;
@@ -56,30 +62,81 @@ body{
     margin: 0 0 490px 0;
     width: 496px;
 }
+
 #sidebar #social {
     width: 490px;
     height: 105px;
     background-color: #d3d3d3;
     text-align: center;
     padding: 5px;
+    border-radius: 7px;
 }
-/* #sidebar #social p {
-text-align: center;
-} */
-input[type='search'] {
+
+/* input[type='search'] {  there is one css property 
     border-color: gray;
-}
+/* } */
+
 #sidebar #views {
-color: #ffffff;
-float: left;
+    float: left;
 }
+
 #views ul:last-child li {
     display: inline-block;
     color: #000;
 }
-#footer {
-    
+
+.date {
+    width: 490px;
+    display: inline-block;
+    margin: 15px 0px 0px 190px;
+    color: #808080;
 }
+
+#sidebar .thumbnails {
+    width: 117px;
+    height: 118px;
+    margin: 40px 45px 0px 0px;
+    display: inline-block;
+}
+
+.thumbnails .caption {
+    margin: 0;
+    text-align: center;
+}
+#videoHeader {
+    margin-top: 15px;
+}
+
+#videoHeader>span:first-child { /*this 103 to 110 lines for how to create a yellow circle next to the Latestvideos section*/
+    display: inline-block;
+    width: 2%;
+    height: 10px;
+    border-radius: 5px;
+    margin: 0px;
+    background-color: yellow;
+}
+
+#videoHeader>span:last-child {
+    width: 90%;
+    font-size: 1.2em;
+    margin: 10px 0 10px 8px;
+}
+
+#videos .play {
+    margin: 10px;
+}
+
+.play img {
+    margin:10px 5px 0px 0px;
+    vertical-align: middle;
+}
+
+#videos .caption {
+    width: 331px;
+    height: 61px;
+    display: inline-block;
+}
+
 #main .tile {
     width: 410px;
     /* max-height: 320px; */
@@ -88,6 +145,7 @@ float: left;
     margin: 0 61px 61px 0;
     vertical-align: top;
 }
+
 p.caption {
     /* width: 410px; */
     margin: 0;
@@ -96,46 +154,13 @@ p.caption {
     /* vertical-align: baseline; */
     /* /*height: ; */
 }
+
 p.subCaption {
     /* height: 30px; */
     /* margin-bottom: 40px; */
     margin: 0;
 }
-#main .thumbnails {
-    width: 117px;
-    height: 118px;
-    margin: 40px 45px 0px 0px;
-    display: inline-block;
-}
-.thumbnails .caption {
-    margin: 0;
-    text-align: center;
-}
-#videos .play {
-    margin: 10px;
-}
-.play img {
-    margin:10px 5px 0px 0px;
-    vertical-align: middle;
-}
-#videos .caption {
-    width: 331px;
-    height: 61px;
-    display: inline-block;
-}
-#videoHeader>span:first-child {
-    display: inline-block;
-    width: 2%;
-    height: 10px;
-    border-radius: 5px;
-    /* margin: auto 0; */
-    background-color: yellow;
-}
-#videoHeader>span:last-child {
-    width: 90%;
-    font-size: 1.2em;
-    margin: 10px 0 10px 8px;
-}
+
 /* #videos li {
     list-style-type: circle;   
 } */
@@ -145,19 +170,23 @@ a:link{
     color: #056896;
     /* font-weight: bold; */
 }
+
 .stories {
     margin: 0px 600px 20px 460px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 70px;
 }
+
 #footer {
     font-size: 90%;
     margin: 0px 10px 0 10px;
     border-top: 1px solid #808080;
 }
+
 #footer p {
     margin-top: 25px;
 }
+
 #footer a {
     margin-right: 2px;
 }
