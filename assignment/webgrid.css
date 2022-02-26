@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 #header {
     /* Test */
     /* width: 1500px; */
@@ -6,10 +9,12 @@
     margin: 3% 1% 3% 1%;
     border-bottom: 1px solid #808080;
 }
-#header label {
+#header a {
     /* Test */
     margin-left: 4%;
+    padding: 0.5%;
     font-size: 14px;
+    text-decoration: none;
     color: #808080;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -18,22 +23,27 @@
     font-weight: bold;
     margin-left: 0%;
 }
+#header a:hover {
+    color: #0071c1;
+    border-bottom: 4px solid #0071c1;
+}
 #leftnav {
-    /* float: left; */
-    position: absolute; 
-    left: 1%;
+    display: inline-block;
+    float: left;
     width: 20%;
-    height: 300px;
-    top: 120px;
-    margin: 0px 10px 20px 10px;
+    margin: 0 1% 2% 1%;
     line-height: 2.8em;
-    /* display: inline-block; */
+}
+#leftnav a:hover {
+    background-color: #e3e4e5;
+    color: #0071c1;
+    border-left: 3px solid #0071c1;
 }
 #leftnav a {
-    position: absolute;
+    display: inline-block;
     width: 70%;
     left: 0%;
-    padding-left: 10px;
+    padding: 1%;
     text-decoration: none;
     border-bottom: 1px solid #000;
 }
@@ -42,9 +52,10 @@ a.click {
     color: #0071c1;
 }
 #main {
-    width: 70%;
-    margin-left: 20%;
-    /* display: inline-block; */
+    display: inline-block;
+    float: left;
+    width: 76%;
+    margin: 0 2% 0 0;
 }
 #main h1,h3,h5,label {
     font-family: Arial, Helvetica, sans-serif;
@@ -72,19 +83,25 @@ a.click {
     color: #0071c1;
 }
 #griddetailed p {
-    margin: 0px;
+    margin: 0;
 }
-#gridcontainer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
+.gridcontainer {
     background-color: #e3e4e5;
-    padding: 10.8px 0 10.8px 10.8px;
+    padding: 1% 0 0 1%;
     text-align: center;
 }
+.row::after,.gridcontainer::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.row {
+    margin-bottom: 10px;
+}
 .row > div {
+    box-sizing: border-box;
+    padding: 10px;
     background-color: #727272;
-    /* padding: 10px 0px 10px 0px; */
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 1%;
@@ -92,9 +109,10 @@ a.click {
 .one-half {
     float: left;
     width: 49%;
-    /* display: inline-block;   */
-    /* padding: 0 5px 0px 5px; */
-    /* margin-right: 2%; */
+}
+.two-thirds {
+    float: left;
+    width: 65.67%;
 }
 .one-third {
     float: left;
@@ -112,40 +130,18 @@ a.click {
     float: left;
     width: 7.33%;
 }
-#griddetailed {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
+.gridcontainer.detailed {
     background-color: #727272;
-    padding: 10.8px 0 10.8px 10.8px;
     text-align: start;
 }
-.rowinfo > div {
+.detailed .row > div {
     background-color: #e3e4e5;
-    margin-right: 1%;
-    padding: 10px;
     line-height: 1.5em; 
     font-family: Arial, Helvetica, sans-serif;  
 }
-.rowinfo h5 {
+.row h5 {
     color: #000 !important;
     font-size: 1em;
-}
-.one-halfinfo {
-    float: left;
-    width: 47%;
-}
-.one-thirdinfo {
-    float: left;
-    width: 30.33%;
-}
-.one-fourthinfo {
-    float: left;
-    width: 22%;
-}
-.two-thirdsinfo {
-    float: left;
-    width: 63.67%;
 }
 /* .one-half {
     padding: 10px;
