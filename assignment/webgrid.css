@@ -99,7 +99,7 @@ a.click {
     margin-bottom: 10px;
 }
 .row > div {
-    box-sizing: border-box;
+    box-sizing: border-box; /*padding is included in the width */
     padding: 10px;
     background-color: #727272;
     padding-top: 10px;
