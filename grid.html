@@ -5,72 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="Bootstrap/grid.css">
     <title>Grid with Bootstrap</title>
 </head>
 <body>
     <div id="header">
-        <div class="container-fluid">
-            <ol class="list-inline">
-                <li class="list-inline-item">UI COMPONENTS</li>
-                <li class="list-inline-item">GETTING STARTED</li>
-                <li class="list-inline-item">DESIGN PRINCIPLES</li>
-                <li class="list-inline-item">ABOUT OUR WORK</li>
-                <li class="list-inline-item">PAGE TEMPLETS</li>
-            </ol>
-        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" data-toggle="tab">UI COMPONENTS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">GETTING STARTED</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">DESIGN PRINCIPLES</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">ABOUT OUR WORK</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">PAGE TEMPLETS</a>
+            </li>
+        </ul>
+        <!-- <div class="tab-content">
+            <div id="uicomponents" class="container tab-pane active">
+                <p>North Carolina is a state in the Southeastern United States. North Carolina borders South Carolina and Georgia to the south, Tennessee to the west, Virginia to the north, and the Atlantic Ocean to the east.</p>
+            </div>
+            <div id="abc" class="container tab-pane">
+                <p>Oregon is a state in the Pacific Northwest of the United States. Oregon is bordered on the west by the Pacific Ocean, on the north by Washington, on the south by California, on the east by Idaho, and on the southeast by Nevada.</p>
+            </div>
+        </div> -->
+    <div id="sidenav">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" data-toggle="tab">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Typography</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Colors</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Grid</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Buttons</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Lables</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Tables</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="tab">Alerts</a>
+            </li>
+        </ul>
     </div>
-    <!-- <div id="sidenav">
-        <a href="Overview.html">Overview</a> </br>
-        <a href="Typography.html">Typography</a> </br>
-        <a href="Colors.html">Colors</a> </br>
-        <a class="click" href="Grid.html">Grid</a> </br>
-        <a href="Buttons.html">Buttons</a> </br>
-        <a href="Lables.html">Lables</a> </br>
-        <a href="Tables.html">Tables</a> </br>
-        <a href="Alerts.html">Alerts</a> 
-    </div> -->
     <div id="main">
+        <h5>UI COMPONENTS</h5>
+        <h1>Grids</h1>
+        <label>ALPHA</label>
+        <p>This 12-column,responsive grid provides structure for website content.</p>
+        <h2>Grid</h2>
         <div class="container-fluid">
             <div class="row" style="background-color:aquamarine; margin-bottom: 1%">
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
-                <div class="col-md">1</div>
+                <div class="col-md-12">1</div>
             </div>
             <div class="row" style="background-color: pink; margin-bottom: 1%">
-                <div class="col-md-3">2</div>
-                <div class="col-md-3">2</div>
-                <div class="col-md-3">2</div>
-                <div class="col-md-3">2</div>
+                <div class="col-md-6">1/2</div>
+                <div class="col-md-6">1/2</div>
             </div>
             <div class="row" style="background-color: yellowgreen; margin-bottom: 1%">
-                <div class="col-md-2">3</div>
-                <div class="col-md-4">3</div>
-                <div class="col-md-4">3</div>
-                <div class="col-md-2">3</div>
+                <div class="col-md-4">1/3</div>
+                <div class="col-md-4">1/3</div>
+                <div class="col-md-4">1/3</div>
             </div>
             <div class="row" style="background-color:deepskyblue; margin-bottom: 1%">
-                <div class="col-md-6">4</div>
-                <div class="col-md-6">4</div>
+                <div class="col-md-3">1/4</div>
+                <div class="col-md-3">1/4</div>
+                <div class="col-md-3">1/4</div>
+                <div class="col-md-3">1/4</div>
             </div>
             <div class="row" style="background-color:peru; margin-bottom: 1%">
-                <div class="col-md-2">5</div>
-                <div class="col-md-2">5</div>
-                <div class="col-md-2">5</div>
-                <div class="col-md-2">5</div>
-                <div class="col-md-2">5</div>
-                <div class="col-md-2">5</div>
+                <div class="col-md-2">1/6</div>
+                <div class="col-md-2">1/6</div>
+                <div class="col-md-2">1/6</div>
+                <div class="col-md-2">1/6</div>
+                <div class="col-md-2">1/6</div>
+                <div class="col-md-2">1/6</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+                <div class="col-md-1">1/12</div>
+            </div>
+        </div>
+        <h2>Grid Examples</h2>
+        <div class="containerinfo">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>One-Half</h5>
+                    <p>Georgia is a state located in southeastern United States. It was established in 1732 and was the last of the original Thirteen Colonies. Named after King Georgia II of Great Britain, Georgia was the fourth state of ratify the United States Constitution , On January 2,1788.Georgia declared its secession from the Union on January 19,1861, and was one of the original seven Confedarate states. Georgia was the last state to be restored to the Union, on July 15,1870. Georgia is the 24th largest and 8th most populous of the 50 United States. </p>
+                </div>
+                <div class="col-md-6">
+                    <h5>One-Half</h5>
+                    <p>Michigan is a state in the Great Lakes region of the Midwestern United States. The name Michigan is the French form of the Ojibwa word mishigamaa, meaning "large water" or "large lake". Michigan is the tenth most populous state, with the 11th most extensive total area (the largest state by total area east of the Mississippi River). Its capital is Lansing, and the largest city is Detroit. Michigan is the only state to consist of two peninsulas. A person in the state is never more than six miles from a natural water source or 85 miles from a Great Lakes shoreline.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>One-Third</h5>
+                    <p>Maryland is a state located in the Mid-Atlantic region of the United States, bordering Virginia, West Virginia, and Washington, D.C. to its south and west; Pennsylvania to its north; and Delaware to its east.Maryland is a state located in the Mid-Atlantic region of the United States.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>One-Third</h5>
+                    <p>Massachusetts is a state in the northeastern United States, bordered by Rhode Island and Connecticut to the south, New York to the west, Vermont and New Hampshire to the north, and the Atlantic Ocean to the east.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>One-Third</h5>Indiana is a U.S. state located in the midwestern and Great Lakes regions in the midwestern and Great Lakes regions of North America. Indiana is the 38th largest by area and the 16th most populous of the 50 United States.xxxx
+                    <p>North Carolina is a state in the Southeastern United States. North Carolina borders South Carolina and Georgia to the south, Tennessee to the west, Virginia to the north, and the Atlantic Ocean to the east.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>One-Fourth</h5>
+                    <p>California is a state located on the West Coast of the United States. It is the most populous U.S. state, with 38 million people, and the third largest state by area (after Alaska and Texas).</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>One-Fourth</h5>
+                    <p>Illinois is a state in the Midwestern United States. It is the 5th most populous state and 25th largest state in terms of land area, and is often noted as a microcosm of the entire country.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>One-Fourth</h5>
+                    <p>Maine is a state in the New England region of the northeastern United States. In spite of its maritime position, it has a continental climate even in coastal cities such as its largest city Portland.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>One-Fourth</h5>
+                    <p>Indiana is a U.S. state located in the midwestern and Great Lakes regions in the midwestern and Great Lakes regions of North America. Indiana is the 38th largest by area and the 16th most populous of the 50 United States.</p>
+                </div>
             </div>
         </div>
     </div>
