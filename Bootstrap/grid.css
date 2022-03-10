@@ -1,0 +1,51 @@
+#sidenav {
+    float: left;
+    width: 20%;
+    margin: 0 1% 2% 1%;
+}
+#main {
+    float: left;
+    width: 76%;
+    margin: 0 2% 0 0;
+}
+#main h1,h2,h5,label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-weight: bold;
+}
+#main h5 {
+    margin: 0 0 10px 0;
+    color: #808080;
+}
+#main h1 {
+    display: inline-block;
+}
+#main label {
+    background-color:#fff1d2;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 0 3px 3px;
+    margin-left: 10px;
+}
+.container-fluid {
+    text-align: center;
+    background-color: #e3e4e5;
+}
+.row > div {
+    background-color: #808080;
+}
+.containerinfo h5 {
+    color: #000;
+    background-color: #e3e4e5;
+}
+.containerinfo {
+    background-color: #727272;
+    text-align: start;
+}
+.containerinfo .row > div {
+    background-color: #e3e4e5;
+}
+#main h2 {
+    color: #0071c1;
+}
