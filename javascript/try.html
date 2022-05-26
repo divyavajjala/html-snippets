@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>window object</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color:aqua;
+            }
+            h2 {
+                color:brown;
+            }
+            /* h3 {
+                color:chartreuse;
+            }
+            h4 {
+                color:red;
+            } */
+        </style>
+    </head>
+    <body>
+        <h1>window prompt method</h1>
+        <input type="button" value="click" onclick="myfunction()"/>
+        <script>
+            function myfunction(){
+                var details= window.prompt("please enter your first name");
+            if (details !=null){
+            document.write("<h2>"+"thank you"+" "+ details+"</h2>");
+            }
+            else if (details!=0){
+                document.write("could you enter your firstname");
+            }
+            else{
+                document.write("Try again");
+            }
+            var password=window.prompt("please enter password");
+            if (password !=null){
+                document.write("true");
+            }
+        }
+        </script> 
+    </body>
+</html>

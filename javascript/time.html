@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Displaying current time</title>
+        <meta charset="utf-8">
+        <style>
+            h1{
+                color: chartreuse;
+            }
+            body{
+                background-color: tomato;
+                text-align: center;
+            }
+            h2 {
+                color:turquoise;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Displaying current Time</h1>
+        <script>
+            var today = new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+            document.write("<h2>"+hours+":"+minutes+":"+seconds+"</h2>");
+        </script>
+    </body>
+</html>

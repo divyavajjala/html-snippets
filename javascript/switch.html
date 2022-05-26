@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>switch statement</title>
+        <meta charset="utf-8">
+        <style>
+            h1{
+                color:crimson;
+                text-align: center;
+            }
+            body{
+                background-color: lightcoral;
+                color:chartreuse;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Switch-statement</h1>
+        <script>
+            var time= 1;
+//            if time is not valid print "please enter a number between 0 and 24"
+            if(0<time && time<=24)
+            {
+                switch(true) 
+                {
+                    case 5<=time && time<=11 : result= "Good Morning";
+                    break;
+                    case 12<=time && time<=16 : result="Good Afternoon";
+                    break; 
+                    case (17<=time && time<=20) : result="Good Evening";
+                    break;
+                    case (21<=time && time<=24) || (0<=time && time<=4) : result="Good Night";
+                    break;
+                }
+                document.write(result);
+            }
+            else{ 
+                document.write("please enter a valid number")
+            }
+            // switch(true){
+            //     case 5<=time && time<=11 : result= "Good Morning";
+            //     break;
+            //     case 12<=time && time<=16 : result="Good Afternoon";
+            //     break; 
+            //     case (17<=time && time<=20) : result="Good Evening";
+            //     break;
+            //     case (21<=time && time<=24) || (0<=time && time<=4) : result="Good Night";
+            //     break;
+            // }
+            // document.write(result);
+        </script>
+    </body>
+</html>
