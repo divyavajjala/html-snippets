@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects constructor</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Creaing Objects with the constructor </h1>
+        <!-- <table summary="kmkllll">
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>machiel</td>
+            </tr>
+        </table> -->
+        <script>
+            function passanger(first,last,age,address,arrival,departure){
+                this.firstname=first;
+                this.lastname=last;
+                this.age=age;
+                this.address=address;
+                this.arrival=arrival;
+                this.departure=departure;
+            }
+            var details=new passanger("john","machiel",50,"california","tacoma","california");
+            var details2=new passanger("james","bond",52,"denvar","dallas","denvar");
+            // document.write("<ul>"+"<li>"+ details.firstname+" " + details.lastname+ " " +details.age + " " + details.address + " " + details.arrival + " " + details.departure + "</li>"+"</ul>");
+            // document.write("<ul>"+"<li>"+details2.firstname + " " + details2.lastname + " " + details2.age + " "+details.address+"</li>"+"</ul>");
+            document.write("<table><tr><th>FirstName,LastName,age</th><td>"+" "+details.firstname+" "+details.lastname+" " +details.age+"</td></tr></table>");
+        </script> 
+    </body>
+</html>
