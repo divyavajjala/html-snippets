@@ -19,12 +19,10 @@ console.log("highest bubble score:" + highScore);
 var bestSolutions = [];
 for (var i=0; i<scores.length; i++){
     if(scores[i]==highScore){
-        // bestSolutions.push(i);
-        bestSolutions=bestSolutions[i];
-        console.log("solutions with the highest score:"+ bestSolutions)
+        bestSolutions.push(i);
     }
 }
-// console.log("solutions with the highest score:"+ bestSolutions);
+console.log("solutions with the highest score:"+ bestSolutions);
 
 
 
