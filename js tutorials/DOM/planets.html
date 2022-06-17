@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>planets</title>
+        <style type = "text/css">
+            .redtext {
+                color:red;
+            }
+            .greentext{
+                color:blue;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function main(){
+            var planet = document.getElementById("greenplanet");
+            planet.setAttribute("class", "redtext");
+            planet.innerHTML = "Red alert: hit by phaser fire";
+            var planet = document.getElementById("redplanet");
+            planet.setAttribute ("class", "greentext");
+            }
+            window.onload = main;
+        </script>
+        <h1>Green palnet</h1>
+        <p id="greenplanet">All is well</p>
+        <h2>Red planet</h2>
+        <p id="redplanet">Nothing to report</p>
+        <h3>Blue planet</h3>
+        <p id="blueplanet">All systems A-OK</p>
+    </body>
+</html>

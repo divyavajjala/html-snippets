@@ -7,7 +7,7 @@ var output;
 //     i++;
 // }
 var highScore=0;
-for (i=0; i<scores.length; i++){
+for (i=0; i<scores.length; i++){ //using for loop
     output=("Bubble solution #"+ i+"score:" + scores[i]);
     console.log(output);
     if(scores[i]>highScore){
@@ -18,7 +18,7 @@ console.log("bubble tests:"+ scores.length);
 console.log("highest bubble score:" + highScore);
 var bestSolutions = [];
 for (var i=0; i<scores.length; i++){
-    if(scores[i]==highScore){
+    if(scores[i]==highScore){ //to find the highest scores in scores array (in index 11 value 69 and in 18 also has the same value 69 when scores[i] mathes the highscore 69 it displays) 
         bestSolutions.push(i);
     }
 }
