@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+#board {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin:auto;
+    background: url("images/board1.jpg");
+    /* background-repeat: no-repeat; */
+}
+#messageArea {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    color: #53af13;
+}
+table {
+    position:absolute;
+    top:93px;
+    left: 177px;
+    color:#53af13; 
+    border-spacing: 0px;   
+} 
+td {
+    width: 97px;
+    height: 97px;
+}
+.hit {
+    background-image: url(images/ship3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.miss {
+    background-image: url(images/miss.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+form {
+    position: absolute;
+    padding:10px;
+    bottom: 0px;
+    right: 0px;
+    background-color:#53af13; 
+}
+input {
+    background-color: #98cf71;
+    font-size: 1em;
+    border: none;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}

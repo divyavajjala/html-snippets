@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>excercise</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>excercise</h1>
+        <script>
+            // var text = "YOU SHOULD NEVER SHOUT WHEN TYPING";
+            // var presentableText = text.toLowerCase();
+            // if(presentableText.length>0){
+            //     alert(presentableText);
+            // }
+            // var emot = "XOxxOO";
+            // var hugs = 0;
+            // var kisses = 0;
+            // emot =emot.trim();
+            // emot = emot.toUpperCase();
+            // for (var i=0; i<emot.length; i++){
+            //     if(emot.charAt(i)==="X"){
+            //         alert(hugs++);
+            //     }
+            //     else if(emot.charAt(i)=="O"){
+            //     }
+            //         alert(kisses++);
+            //     }
+            var phoneNumber = "123-4567";
+            function validate(phoneNumber){
+                if(phoneNumber.length !==8){
+                    return false;
+                }
+                for(var i=0; i<phoneNumber.length; i++){
+                    if (i==3){
+                        if(phoneNumber.charAt(i)!=='-'){
+                            return false;
+                        }
+                    }
+                    else if(isNaN(phoneNumber.charAt(i))){
+                        return false;
+                    }
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>
