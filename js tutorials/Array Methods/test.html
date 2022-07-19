@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>abc</title>
+        <meta charset="utf-8"></meta>
+    </head>
+    <body>
+        <h1>abc</h1>
+        <script>
+            function nextInLine(arr,item){
+                arr.push(item);
+                const removed = arr.shift(item);
+                return arr;
+            }
+           var remove = nextInLine([1,2,3,4],0);
+            console.log(remove);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>even and odd array numbers</title>
+        <meta charset="utf-8"></meta>
+    </head>
+    <body>
+        <h1>finding even and odd array numbers</h1>
+        <script>
+             var arr1 = [1,2,3,4,5];
+            var even = [];
+            var odd =[];
+            function findOddNumbers(arr){
+                for(i=0; i<arr1.length; i++){
+                    if((arr1[i]%2)!=1){
+                        even.push(arr1[i]);
+                    //    console.log("even numbers" + evens ) ;
+                    }
+                    else {
+                        odd.push(arr1[i]);
+                        // console.log("odd numbers" + odds);
+                    }
+                }
+            }
+            var numbers = findOddNumbers(arr1);
+            console.log("even numbers are:"+ even +" "+ "odd numbers are:" + odd);
+        </script>
+    </body>
+</html>

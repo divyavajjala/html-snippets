@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>array addition</title>
+        <meta charset="utf-8"></meta>
+    </head>
+    <body>
+        <h1>array addition</h1>
+        <script>
+            var arr1 = [1,2,3,4,5];
+            var add = 0;
+            function addArrayNumbers(arr){
+                for(i=0; i<arr1.length; i++){
+                    add+=arr1[i];
+                }
+                return add;
+            }
+            var add1 = addArrayNumbers(arr1);
+            console.log(add1);
+        </script>
+    </body>
+</html>
