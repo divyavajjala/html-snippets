@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>array multiplication</title>
+        <meta charset="utf-8"></meta>
+    </head>
+    <body>
+        <h1> MultiplyArrayNumbers</h1>
+        <script>
+            var arr1 = [1,2,3,4,5];
+            var mul = 1;
+            function multiplyArrayNumbers(arr){
+                for(i=0; i<arr1.length; i++){
+                    mul*=arr1[i];
+                }
+                return mul;
+            }
+            var mul1 = multiplyArrayNumbers(arr1);
+            console.log(mul1);
+        </script>
+    </body>
+</html>

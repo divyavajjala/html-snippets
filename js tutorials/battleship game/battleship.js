@@ -21,12 +21,44 @@ function test() {
     view.displayMiss("25");
     view.displayHit("26");
     view.displayMessage("Tap tap, is this thing on?");
+    var model = {
+        boardSize: 7,numShips: 3,shipsSunk: 0, shipLength: 3,
+        ships: [ {locations: ["10","20","30"],hits:["","",""]},
+              {locations: ["32","33","34"],hits:["","hit",""]},
+              {locations: ["63","64","65"],hits:["","",""]} 
+            ],
+        fire: function(guess){
+            for(var i=0; i<this.numShips; i++){
+                var ship = this.ships[i];
+                // locations = ship.locations;
+                // var index = locations.indexOf(guess);
+                var index = locations.indexOf(guess);
+                if(index>=0){
+                    ship.hits[index]="hit";
+                    view.displayHit(guess);
+                    view.displayMessagae("HIT");
+                    if(this.isSunk(ship)){
+                        view.displayMessage("you sank my battaleship!");
+                        this.shipsSunk++;
+                    }
+                    return true;
+                }
+            }
+            view.displayMiss(guess);
+            view.displayMessage("you missed it");
+            return false;
+        },
+        isSunk: function (ship){
+            for(var i=0;i<this.shipLength; i++){
+                if(ship.hits[i]!=="hit"){
+                    return false;
+                }
+            }
+            return true;
+        }
+    };
 };
 window.onload = test;
-var ships = [ {locations: ["10","20","30"],hits:["","",""]},
-              {locations: ["32","33","34"],hits:["","",""]},
-              {locations: ["63","64","65"],hits:["","",""]} 
-            ];
 // location ----> variable /name of a variable
 
 // "location" ----> literalsvalue
